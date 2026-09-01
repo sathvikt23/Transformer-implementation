@@ -1,9 +1,5 @@
-# V5 Data Mixture & Curriculum Plan (v3 — Fully Unblocked with 100B Token Budget)
+# Data Mixture & Curriculum Plan ( 100B Token Budget)
 
-> Status: **Finalized Baseline**. Total Pretraining Token Budget established at **100 Billion tokens (100B)**. 
-> All percentage shares, exact token allocations, dataset volumes, tier splits, and effort bands are unblocked and locked to this 100B budget baseline (scalable linearly for larger budgets).
-> - **[CONFIRMED — Session 4]**: derived directly from the 100MB pipeline run's real output (~27,800 retained docs).
-> - **[UNBLOCKED — 100B Baseline]**: concrete target allocation computed from the 100B token pretraining budget.
 
 ## 0. Target capabilities → benchmarks → data shape
 
@@ -135,4 +131,4 @@ The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs o
 - **[UNBLOCKED] Indic Verified-Native Supply:** Budgeted at **5.5B verified native tokens** (AI4Bharat Sangraha + IndicCorp v2) out of 10B Indic total.
 - **[UNBLOCKED] Agentic Supply & Licensing:** Budgeted at **1.5B open sourced tokens** (ToolBench, Gorilla, AgentInstruct, WebArena) + **3.5B rejection-sampled synthetic tokens**.
 - **[UNBLOCKED] Anneal Reserve:** Locked at **2.14B tokens** (15% of verified Indic, agentic, and high/ultra reasoning) reserved for final 2% annealing phase.
-- **[UNBLOCKED] Code Lane:** Expanded to **23.0B tokens** (23%) using dedicated StarCoder2 / The Stack v2 corpus with AST-level deduplication and compilability verification.
+- **[UNBLOCKED] Code Lane:** Expanded to **23.0B tokens** (23%) using dedicated StarCoder2 / The Stack v2 corpus with AST-level deduplication and compilability verification.
