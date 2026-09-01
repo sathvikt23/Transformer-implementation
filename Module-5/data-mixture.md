@@ -1,7 +1,5 @@
 # Data Mixture & Curriculum Plan (100B Token Budget Baseline)
 
-> Status: **Finalized Baseline**. Total Pretraining Token Budget established at **100 Billion tokens (100B)**. 
-> All percentage shares, exact token allocations, dataset volumes, tier splits, and effort bands are locked to this 100B budget baseline (scalable linearly for larger budgets).
 
 ## 0. Target capabilities → benchmarks → data shape
 
