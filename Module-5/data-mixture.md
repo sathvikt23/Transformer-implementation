@@ -1,5 +1,7 @@
-# Data Mixture & Curriculum Plan ( 100B Token Budget)
+# Data Mixture & Curriculum Plan (100B Token Budget Baseline)
 
+> Status: **Finalized Baseline**. Total Pretraining Token Budget established at **100 Billion tokens (100B)**. 
+> All percentage shares, exact token allocations, dataset volumes, tier splits, and effort bands are locked to this 100B budget baseline (scalable linearly for larger budgets).
 
 ## 0. Target capabilities → benchmarks → data shape
 
@@ -19,12 +21,12 @@
 
 | Lane | Share | Tokens (of 100B Total Budget) | Real supply status & Pipeline Source |
 |---|---|---|---|
-| General web | 42.0% | **42.0 Billion tokens** (42,000,000,000) | **[CONFIRMED — Session 4]** abundant: 4 sub-pools (§1a), 61% of pipeline yield (Wiki 12.39B, Web 10.33B, Lit 9.66B, Comm 9.66B) |
-| Code | 23.0% | **23.0 Billion tokens** (23,000,000,000) | **[CONFIRMED — Session 4]** Code&Math seed pool (16% of run) expanded via dedicated StarCoder2 / The Stack v2 pipeline |
-| Math / science / reasoning | 15.0% | **15.0 Billion tokens** (15,000,000,000) | **[CONFIRMED — Session 4]** D1 Science (arXiv, 23% of run) + OpenWebMath usable as raw pretraining text |
-| Indic (protected floor) | 10.0% | **10.0 Billion tokens** (10,000,000,000) | **[UNBLOCKED]** Stage 1 reconfigured pipeline run on AI4Bharat Sangraha + IndicCorp v2 |
-| Agentic (protected floor) | 5.0% | **5.0 Billion tokens** (5,000,000,000) | **[UNBLOCKED]** Sourced (ToolBench/Gorilla 1.5B) + Rejection-sampled synthetic trajectories (3.5B) |
-| Long-context | 5.0% | **5.0 Billion tokens** (5,000,000,000) | **[UNBLOCKED]** Books, long technical preprints & synthetic long-context documents (§7) |
+| General web | 42.0% | **42.0 Billion tokens** (42,000,000,000) | Abundant: 4 sub-pools (§1a), 61% of pipeline yield (Wiki 12.39B, Web 10.33B, Lit 9.66B, Comm 9.66B) |
+| Code | 23.0% | **23.0 Billion tokens** (23,000,000,000) | Code&Math seed pool (16% of run) expanded via dedicated StarCoder2 / The Stack v2 pipeline |
+| Math / science / reasoning | 15.0% | **15.0 Billion tokens** (15,000,000,000) | D1 Science (arXiv, 23% of run) + OpenWebMath usable as raw pretraining text |
+| Indic (protected floor) | 10.0% | **10.0 Billion tokens** (10,000,000,000) | Stage 1 reconfigured pipeline run on AI4Bharat Sangraha + IndicCorp v2 |
+| Agentic (protected floor) | 5.0% | **5.0 Billion tokens** (5,000,000,000) | Sourced (ToolBench/Gorilla 1.5B) + Rejection-sampled synthetic trajectories (3.5B) |
+| Long-context | 5.0% | **5.0 Billion tokens** (5,000,000,000) | Books, long technical preprints & synthetic long-context documents (§7) |
 | **Total** | **100.0%** | **100.0 Billion tokens** | **Fully Allocated** |
 
 ## 1a. Session 4 inventory → lane mapping (real data, proof-of-concept scale)
@@ -42,7 +44,7 @@
 | Indic (any tier) | 0 | 0% | Indic lane | absent by construction (reconfigured filter) |
 | Agentic trajectories | 0 | 0% | Agentic lane | absent by construction (synthetic generation) |
 
-### Internal general-web sub-mix, normalized [CONFIRMED — Session 4]
+### Internal general-web sub-mix, normalized
 
 The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs out of 27,800). Renormalized to 100% *within the 42.0B token General Web lane*:
 
@@ -56,7 +58,7 @@ The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs o
 
 ## 2. Indic tier split (protected lane: 10.0B tokens)
 
-*Unblocked with real inventory breakdown for the 10.0 Billion token Indic budget:*
+*Real inventory breakdown for the 10.0 Billion token Indic budget:*
 
 | Tier | Share of Indic budget | Tokens (of 10B Indic) | Target Datasets / Sources | Notes |
 |---|---|---|---|---|
@@ -124,11 +126,12 @@ The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs o
 
 *Phase 1 starts immediately at 20M–25M token proxy scale using the real Session 4 split baseline.*
 
-## 9. Resolved Open Risks & Metrics Summary
+## 9. Metrics & Open Risks Summary
 
-- **Resolved from hypothesis → confirmed fact:** Session 4 proves Indic & Agentic tokens are 0% in standard web runs; now resolved via parallel Indic pipeline (10B tokens) and synthetic/sourced agentic generation (5B tokens).
-- **[UNBLOCKED] Total Token Budget:** Set to **100 Billion tokens (100B)**, unblocking all absolute token counts in §1, §2, §3, §4, §5, and §7.
-- **[UNBLOCKED] Indic Verified-Native Supply:** Budgeted at **5.5B verified native tokens** (AI4Bharat Sangraha + IndicCorp v2) out of 10B Indic total.
-- **[UNBLOCKED] Agentic Supply & Licensing:** Budgeted at **1.5B open sourced tokens** (ToolBench, Gorilla, AgentInstruct, WebArena) + **3.5B rejection-sampled synthetic tokens**.
-- **[UNBLOCKED] Anneal Reserve:** Locked at **2.14B tokens** (15% of verified Indic, agentic, and high/ultra reasoning) reserved for final 2% annealing phase.
-- **[UNBLOCKED] Code Lane:** Expanded to **23.0B tokens** (23%) using dedicated StarCoder2 / The Stack v2 corpus with AST-level deduplication and compilability verification.
+- **Collection Pipeline Fact:** Session 4 proves Indic & Agentic tokens are 0% in standard web runs; now resolved via parallel Indic pipeline (10B tokens) and synthetic/sourced agentic generation (5B tokens).
+- **Total Token Budget:** Set to **100 Billion tokens (100B)**, unblocking all absolute token counts in §1, §2, §3, §4, §5, and §7.
+- **Indic Verified-Native Supply:** Budgeted at **5.5B verified native tokens** (AI4Bharat Sangraha + IndicCorp v2) out of 10B Indic total.
+- **Agentic Supply & Licensing:** Budgeted at **1.5B open sourced tokens** (ToolBench, Gorilla, AgentInstruct, WebArena) + **3.5B rejection-sampled synthetic tokens**.
+- **Anneal Reserve:** Locked at **2.14B tokens** (15% of verified Indic, agentic, and high/ultra reasoning) reserved for final 2% annealing phase.
+- **Code Lane:** Expanded to **23.0B tokens** (23%) using dedicated StarCoder2 / The Stack v2 corpus with AST-level deduplication and compilability verification.
+
