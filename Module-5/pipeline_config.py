@@ -15,7 +15,7 @@ LANE_ALLOCATIONS = {
     "long_context": 0.05,     # 5%  -> 5.0B Tokens
 }
 
-# Internal General Web Sub-mix (Normalized from Session 4 100MB yield)
+# Internal General Web Sub-mix (Normalized from 100MB benchmark pipeline yield)
 GENERAL_WEB_SUBMIX = {
     "D1_knowledge": 0.295,    # Wikipedia / Educational bridge (29.5%)
     "D3_general_web": 0.246,   # Diverse filtered web (24.6%)

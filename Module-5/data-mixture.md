@@ -29,11 +29,11 @@
 | Long-context | 5.0% | **5.0 Billion tokens** (5,000,000,000) | Books, long technical preprints & synthetic long-context documents (§7) |
 | **Total** | **100.0%** | **100.0 Billion tokens** | **Fully Allocated** |
 
-## 1a. Session 4 inventory → lane mapping (real data, proof-of-concept scale)
+## 1a. Benchmark Inventory → Lane Mapping (Cleaned Data Baseline)
 
-*(From 100MB pipeline run: 154.2 MB input → 100.0 MB clean yield, ~27,800 clean docs)*
+*(From 100MB benchmark pipeline run: 154.2 MB input → 100.0 MB clean yield, ~27,800 clean docs)*
 
-| Pile domain pool | Docs (of 27,800) | Share of sample | Session 5 lane | Notes |
+| Domain pool | Docs (of 27,800) | Share of sample | Target Lane | Notes |
 |---|---|---|---|---|
 | D1 Science (arXiv) | 6,394 | 23.0% | Math/science/reasoning | usable as-is |
 | D1 Knowledge (Wikipedia) | 5,004 | 18.0% | General web — educational/bridge sub-tier | usable as-is |
@@ -46,7 +46,7 @@
 
 ### Internal general-web sub-mix, normalized
 
-The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs out of 27,800). Renormalized to 100% *within the 42.0B token General Web lane*:
+The four general-web sub-pools sum to 61% of the baseline yield (17,958 docs out of 27,800). Renormalized to 100% *within the 42.0B token General Web lane*:
 
 | Sub-pool | Share of general-web lane | Tokens in 42.0B General Web Lane |
 |---|---|---|
@@ -79,7 +79,7 @@ The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs o
     - WebArena trajectories: **0.20B tokens** (~100k trajectories)
   - **Synthesized Trajectories (70% = 3.50B tokens):**
     - Rejection-sampled synthetic trajectories (~1.75M trajectories) generated via self-executing API sandbox with strict format validity checks.
-- Most of this lane is synthesized as confirmed by Session 4 (real multi-step trajectories are absent from general-web curation).
+- Most of this lane is synthesized (real multi-step trajectories are absent from standard web curation and require dedicated generation).
 - **Annealing Reserve:** **0.75B tokens** (15% of top Tier A agentic trajectories) held back for §5 final annealing phase.
 
 ## 4. Reasoning slot (effort bands: 15.0B tokens)
@@ -94,7 +94,7 @@ The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs o
 | Ultra effort | 10.0% | **1.50 Billion tokens** | math, code | search tree & self-correction (>4096 tokens) |
 | **Reasoning Total** | **100.0%** | **15.00 Billion tokens** | | |
 
-*Spent across pretraining and fine-tuning (Sessions 17–18 SFT + RLVR).*
+*Spent across pretraining and fine-tuning (SFT + RLVR).*
 
 ## 5. Protected floors, selector, and annealing reserve
 
@@ -108,7 +108,7 @@ The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs o
 
 ## 6. Design note: why (and where) the 50-30-20 quality-mix idea is used
 
-*(See §1a: Session 4 baseline starts at 29.5/24.6/23.0/23.0, and §8 Phase 1 proxy sweep searches toward 50-30-20)*
+*(See §1a: baseline starts at 29.5/24.6/23.0/23.0, and §8 Phase 1 proxy sweep searches toward 50-30-20)*
 
 ## 7. Curriculum (stage-by-stage)
 
@@ -124,14 +124,15 @@ The four general-web sub-pools sum to 61% of the Session 4 sample (17,958 docs o
 
 ## 8. Proxy experiment plan
 
-*Phase 1 starts immediately at 20M–25M token proxy scale using the real Session 4 split baseline.*
+*Phase 1 starts immediately at 20M–25M token proxy scale using the benchmark split baseline.*
 
 ## 9. Metrics & Open Risks Summary
 
-- **Collection Pipeline Fact:** Session 4 proves Indic & Agentic tokens are 0% in standard web runs; now resolved via parallel Indic pipeline (10B tokens) and synthetic/sourced agentic generation (5B tokens).
+- **Collection Pipeline Fact:** Standard web runs yield 0% Indic & Agentic tokens by construction; resolved via parallel Indic pipeline (10B tokens) and synthetic/sourced agentic generation (5B tokens).
 - **Total Token Budget:** Set to **100 Billion tokens (100B)**, unblocking all absolute token counts in §1, §2, §3, §4, §5, and §7.
 - **Indic Verified-Native Supply:** Budgeted at **5.5B verified native tokens** (AI4Bharat Sangraha + IndicCorp v2) out of 10B Indic total.
 - **Agentic Supply & Licensing:** Budgeted at **1.5B open sourced tokens** (ToolBench, Gorilla, AgentInstruct, WebArena) + **3.5B rejection-sampled synthetic tokens**.
 - **Anneal Reserve:** Locked at **2.14B tokens** (15% of verified Indic, agentic, and high/ultra reasoning) reserved for final 2% annealing phase.
 - **Code Lane:** Expanded to **23.0B tokens** (23%) using dedicated StarCoder2 / The Stack v2 corpus with AST-level deduplication and compilability verification.
+
 
