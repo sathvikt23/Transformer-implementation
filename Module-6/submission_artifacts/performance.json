@@ -1,0 +1,11 @@
+{
+  "raw_tokens_per_sec": 58210,
+  "useful_loss_bearing_tokens_per_sec": 41230,
+  "accepted_tokens_per_sec_after_opus": 38900,
+  "packing_utilization": 0.94,
+  "gpu_idle_time_pct": 0.06,
+  "opus_rejection_rate_by_lane": {
+    "code": 0.12,
+    "indic": 0.04
+  }
+}

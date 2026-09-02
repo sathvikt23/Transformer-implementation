@@ -1,0 +1,34 @@
+[PASS]  tokenizer_hash_verified   hash=80434dabb627f9e6...
+[EVENT] shards_created            n=24
+[EVENT] manifests_validated       n=24
+[EVENT] eval_data_blocked         shard_id=eval_003 reason=never_train_flag
+[PASS]  eval_shard_blocked
+[EVENT] mixture_compiled          stage=reasoning-heavy-midtrain
+[EVENT] opus_decision             candidate=c_0182 status=rejected reason=quota_pressure
+[EVENT] opus_decision             candidate=c_843210_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843211_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843212_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843213_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843214_1 status=protected-floor-rescued reason=protected_floor_rescued
+[EVENT] opus_decision             candidate=c_843215_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843216_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843217_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843218_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843219_1 status=accepted reason=quality_above_threshold
+[EVENT] batches_packed            n=512 utilization=0.94
+[PASS]  checkpoint_saved          step=843219 ledger_offset=91234
+[EVENT] opus_decision             candidate=c_843220_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843221_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843222_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843223_1 status=protected-floor-rescued reason=protected_floor_rescued
+[EVENT] opus_decision             candidate=c_843224_1 status=accepted reason=quality_above_threshold
+[EVENT] opus_decision             candidate=c_843225_1 status=accepted reason=quality_above_threshold
+[EVENT] crash_simulated           at_step=843225
+[EVENT] run_resumed               from_step=843219
+[EVENT] opus_decision             candidate=c_843220_1 status=accepted reason=quality_above_threshold
+[PASS]  resume_next_batch_matched expected=b_91235 actual=b_91235
+[EVENT] historical_stream_replayed from_offset=1 to=20
+[PASS]  replay_hash_matched       original=f6eec4c8a39f11de replay=f6eec4c8a39f11de
+[EVENT] branch_forked             branch_id=br_002 at_step=843219
+[EVENT] audit_completed
+[EVENT] performance_measured      useful_tok_s=41230

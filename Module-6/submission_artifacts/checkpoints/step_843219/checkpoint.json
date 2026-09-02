@@ -1,0 +1,26 @@
+{
+  "checkpoint_id": "step_843219",
+  "branch_id": "br_main",
+  "run_id": "run_v5_01",
+  "global_step": 843219,
+  "model_state": {
+    "layer_count": 32,
+    "hidden_dim": 4096
+  },
+  "optimizer_state": {
+    "step": 843219,
+    "lr": 0.0003
+  },
+  "scheduler_state": {
+    "warmup_steps": 2000
+  },
+  "rng_state": {
+    "python_seed": 42,
+    "numpy_seed": 42
+  },
+  "dataloader_state": {
+    "sample_index": 843219,
+    "shard_offset": 4
+  },
+  "ledger_offset": 91234
+}

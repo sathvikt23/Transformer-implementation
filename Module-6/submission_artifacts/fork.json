@@ -1,0 +1,12 @@
+{
+  "fork_step": 843219,
+  "parent_branch": "br_main",
+  "new_branch": "br_002",
+  "checkpoint_id": "step_843219",
+  "ledger_offset": 91234,
+  "line_assignments": {
+    "indic": 0.35,
+    "code": 0.4,
+    "reasoning": 0.25
+  }
+}

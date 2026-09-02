@@ -1,0 +1,32 @@
+{
+  "shard_id": "shard_0022",
+  "source_ids": [
+    "doc_shard_0022_01",
+    "doc_shard_0022_02",
+    "doc_shard_0022_03",
+    "doc_shard_0022_04",
+    "doc_shard_0022_05"
+  ],
+  "document_ids": [
+    "doc_shard_0022_01",
+    "doc_shard_0022_02",
+    "doc_shard_0022_03",
+    "doc_shard_0022_04",
+    "doc_shard_0022_05"
+  ],
+  "tokenizer_hash": "80434dabb627f9e630a903559056b62c5fb3dfea1d658828793cee84ab00bec2",
+  "token_count": 470,
+  "language_script": "en-US",
+  "capability_lane": "reasoning",
+  "license_provenance_tier": "permissive-v1",
+  "license_tier": "permissive-v1",
+  "cleaning_pipeline_hash": "8c7596188645af66",
+  "dedup_status": "passed_exact_and_near_dedup",
+  "pii_screen_status": "screened",
+  "contamination_status": "clean",
+  "eval_overlap_status": "clear",
+  "content_hash": "81797bfff942fbb1004d55286a5b89cab909ee72846f072fbf8012b58ef27e3b",
+  "parent_shard_ids": [],
+  "parent_manifest_ids": [],
+  "admission": "Admitted to registry"
+}

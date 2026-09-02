@@ -1,0 +1,138 @@
+{
+  "firewall_rules": {
+    "blocked_dataset_ids": [
+      "eval_003",
+      "eval_benchmark_v1",
+      "gsm8k_eval",
+      "mmlu_eval"
+    ],
+    "blocked_document_ids": []
+  },
+  "audit_log": [
+    {
+      "shard_id": "shard_0001",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0002",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0003",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0004",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0005",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0006",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0007",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0008",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0009",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0010",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0011",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0012",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0013",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0014",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0015",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0016",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0017",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0018",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0019",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0020",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0021",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0022",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0023",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "shard_0024",
+      "status": "admitted",
+      "reason": "clean"
+    },
+    {
+      "shard_id": "eval_003",
+      "status": "blocked",
+      "reason": "never_train_flag"
+    }
+  ]
+}

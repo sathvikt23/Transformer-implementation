@@ -1,0 +1,38 @@
+{
+  "tokenizer_integrity": {
+    "result": "PASS",
+    "evidence": "manifests/shard_0001.json#tokenizer_hash"
+  },
+  "evaluation_firewall": {
+    "result": "PASS",
+    "evidence": "run.log#eval_shard_blocked"
+  },
+  "packing_correctness": {
+    "result": "PASS",
+    "evidence": "ledgers/consumption.db#microbatches=17"
+  },
+  "mixture_compliance": {
+    "result": "PASS",
+    "evidence": "ledgers/consumption.db#mixture_lane_shares"
+  },
+  "opus_audit_trail": {
+    "result": "PASS",
+    "evidence": "ledgers/learning.db#opus_records=17"
+  },
+  "crash_recovery": {
+    "result": "PASS",
+    "evidence": "ledgers/consumption.db#step=843219..843225"
+  },
+  "replay": {
+    "result": "PASS",
+    "evidence": "ledgers/consumption.db#batch_hash original vs replay"
+  },
+  "learning_trace": {
+    "result": "PASS",
+    "evidence": "ledgers/learning.db#avg_token_loss"
+  },
+  "throughput": {
+    "result": "PASS",
+    "evidence": "performance.json"
+  }
+}
